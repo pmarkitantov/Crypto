@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		ACC0CDCC2BCB2356004EAD40 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */; };
 		ACC0CDCE2BCB2356004EAD40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDCD2BCB2356004EAD40 /* ContentView.swift */; };
-		ACC0CDD02BCB235B004EAD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC0CDCF2BCB235B004EAD40 /* Assets.xcassets */; };
 		ACC0CDD32BCB235B004EAD40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC0CDD22BCB235B004EAD40 /* Preview Assets.xcassets */; };
+		ACC0CDDA2BCC5359004EAD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC0CDD92BCC5359004EAD40 /* Assets.xcassets */; };
+		ACC0CDDD2BCC53D8004EAD40 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDDC2BCC53D8004EAD40 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACC0CDC82BCB2356004EAD40 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		ACC0CDCD2BCB2356004EAD40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		ACC0CDCF2BCB235B004EAD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC0CDD22BCB235B004EAD40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACC0CDD92BCC5359004EAD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Preview Content/Assets.xcassets"; sourceTree = "<group>"; };
+		ACC0CDDC2BCC53D8004EAD40 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,10 @@
 		ACC0CDCA2BCB2356004EAD40 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				ACC0CDDB2BCC53C3004EAD40 /* Extensions */,
 				ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */,
 				ACC0CDCD2BCB2356004EAD40 /* ContentView.swift */,
-				ACC0CDCF2BCB235B004EAD40 /* Assets.xcassets */,
+				ACC0CDD92BCC5359004EAD40 /* Assets.xcassets */,
 				ACC0CDD12BCB235B004EAD40 /* Preview Content */,
 			);
 			path = Crypto;
@@ -65,6 +68,14 @@
 				ACC0CDD22BCB235B004EAD40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACC0CDDB2BCC53C3004EAD40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACC0CDDC2BCC53D8004EAD40 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC0CDD32BCB235B004EAD40 /* Preview Assets.xcassets in Resources */,
-				ACC0CDD02BCB235B004EAD40 /* Assets.xcassets in Resources */,
+				ACC0CDDA2BCC5359004EAD40 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				ACC0CDCE2BCB2356004EAD40 /* ContentView.swift in Sources */,
 				ACC0CDCC2BCB2356004EAD40 /* CryptoApp.swift in Sources */,
+				ACC0CDDD2BCC53D8004EAD40 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +287,11 @@
 				DEVELOPMENT_TEAM = S5RNXZGRV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +299,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hidaha.com.Crypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,11 +320,11 @@
 				DEVELOPMENT_TEAM = S5RNXZGRV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +332,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hidaha.com.Crypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
