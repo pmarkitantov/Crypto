@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC824A132BCDA6A500BBEAB6 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC824A122BCDA6A500BBEAB6 /* CoinModel.swift */; };
 		ACC0CDCC2BCB2356004EAD40 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */; };
 		ACC0CDCE2BCB2356004EAD40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDCD2BCB2356004EAD40 /* ContentView.swift */; };
 		ACC0CDD32BCB235B004EAD40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC0CDD22BCB235B004EAD40 /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC824A122BCDA6A500BBEAB6 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		ACC0CDC82BCB2356004EAD40 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		ACC0CDCD2BCB2356004EAD40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC824A112BCDA68E00BBEAB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC824A122BCDA6A500BBEAB6 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACC0CDBF2BCB2356004EAD40 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		ACC0CDCA2BCB2356004EAD40 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				AC824A112BCDA68E00BBEAB6 /* Models */,
 				ACC0CDDE2BCC58C2004EAD40 /* Core */,
 				ACC0CDDB2BCC53C3004EAD40 /* Extensions */,
 				ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */,
@@ -211,6 +222,7 @@
 				ACC0CDE92BCC59E1004EAD40 /* CircleButtonView.swift in Sources */,
 				ACC0CDDD2BCC53D8004EAD40 /* Color.swift in Sources */,
 				ACC0CDEB2BCC5C54004EAD40 /* CircleButtonAnimationView.swift in Sources */,
+				AC824A132BCDA6A500BBEAB6 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
