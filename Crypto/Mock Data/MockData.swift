@@ -8,6 +8,9 @@
 import Foundation
 
 struct MockData {
+    
+    static let homeVM = HomeViewModel()
+    
     static let coin = CoinModel(id: "bitcoin",
                                     symbol: "BTC",
                                     name: "Bitcoin",

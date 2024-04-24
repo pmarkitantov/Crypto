@@ -19,6 +19,7 @@
 		ACC0CDE92BCC59E1004EAD40 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDE82BCC59E1004EAD40 /* CircleButtonView.swift */; };
 		ACC0CDEB2BCC5C54004EAD40 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDEA2BCC5C54004EAD40 /* CircleButtonAnimationView.swift */; };
 		ACE8D4052BD6AF6D0074051E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8D4042BD6AF6D0074051E /* Double.swift */; };
+		ACE8D4072BD945C80074051E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8D4062BD945C80074051E /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ACC0CDE82BCC59E1004EAD40 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		ACC0CDEA2BCC5C54004EAD40 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		ACE8D4042BD6AF6D0074051E /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		ACE8D4062BD945C80074051E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		ACC0CDE12BCC58E5004EAD40 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				ACE8D4062BD945C80074051E /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC824A152BD6A7E500BBEAB6 /* CoinRowView.swift in Sources */,
+				ACE8D4072BD945C80074051E /* HomeViewModel.swift in Sources */,
 				AC824A1A2BD6ABDB00BBEAB6 /* MockData.swift in Sources */,
 				ACC0CDCE2BCB2356004EAD40 /* ContentView.swift in Sources */,
 				ACC0CDE32BCC58F2004EAD40 /* HomeView.swift in Sources */,
