@@ -20,6 +20,7 @@
 		ACC0CDEB2BCC5C54004EAD40 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0CDEA2BCC5C54004EAD40 /* CircleButtonAnimationView.swift */; };
 		ACE8D4052BD6AF6D0074051E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8D4042BD6AF6D0074051E /* Double.swift */; };
 		ACE8D4072BD945C80074051E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8D4062BD945C80074051E /* HomeViewModel.swift */; };
+		ACE8D40B2BDAF9510074051E /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8D40A2BDAF9510074051E /* CoinDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		ACC0CDEA2BCC5C54004EAD40 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		ACE8D4042BD6AF6D0074051E /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		ACE8D4062BD945C80074051E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		ACE8D40A2BDAF9510074051E /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +87,11 @@
 		ACC0CDCA2BCB2356004EAD40 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				ACC0CDDB2BCC53C3004EAD40 /* Extensions */,
 				AC824A182BD6ABC400BBEAB6 /* Mock Data */,
+				ACE8D4092BDAF91C0074051E /* Services */,
 				AC824A112BCDA68E00BBEAB6 /* Models */,
 				ACC0CDDE2BCC58C2004EAD40 /* Core */,
-				ACC0CDDB2BCC53C3004EAD40 /* Extensions */,
 				ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */,
 				ACC0CDCD2BCB2356004EAD40 /* ContentView.swift */,
 				ACC0CDD92BCC5359004EAD40 /* Assets.xcassets */,
@@ -166,6 +169,14 @@
 			path = CircleButton;
 			sourceTree = "<group>";
 		};
+		ACE8D4092BDAF91C0074051E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACE8D40A2BDAF9510074051E /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE8D40B2BDAF9510074051E /* CoinDataService.swift in Sources */,
 				AC824A152BD6A7E500BBEAB6 /* CoinRowView.swift in Sources */,
 				ACE8D4072BD945C80074051E /* HomeViewModel.swift in Sources */,
 				AC824A1A2BD6ABDB00BBEAB6 /* MockData.swift in Sources */,

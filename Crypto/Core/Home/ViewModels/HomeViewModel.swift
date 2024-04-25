@@ -18,4 +18,9 @@ class HomeViewModel: ObservableObject {
             self.portfolioCoins.append(MockData.coin)
         }
     }
+    
+    
+    func downloadData() {
+        
+    }
 }

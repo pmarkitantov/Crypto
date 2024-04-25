@@ -20,13 +20,12 @@ struct HomeView: View {
                 homeHeader
                 columnTitles
 
-                if !showPortfolio {
-                    allCoinsList
-                        .transition(.move(edge: .leading))
-                }
                 if showPortfolio {
                     portfolioCoinsList
                         .transition(.move(edge: .trailing))
+                } else {
+                    allCoinsList
+                        .transition(.move(edge: .leading))
                 }
                 Spacer(minLength: 0)
             }
