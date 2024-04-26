@@ -37,7 +37,7 @@ struct HomeView: View {
     NavigationStack {
         HomeView()
     }
-    .environmentObject(MockData.homeVM)
+    .environmentObject(HomeViewModel())
 }
 
 extension HomeView {
