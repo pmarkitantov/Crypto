@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC49F2A62BDD254F0065B09C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC49F2A52BDD254F0065B09C /* NetworkManager.swift */; };
 		AC824A132BCDA6A500BBEAB6 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC824A122BCDA6A500BBEAB6 /* CoinModel.swift */; };
 		AC824A152BD6A7E500BBEAB6 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC824A142BD6A7E500BBEAB6 /* CoinRowView.swift */; };
 		AC824A1A2BD6ABDB00BBEAB6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC824A192BD6ABDB00BBEAB6 /* MockData.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC49F2A52BDD254F0065B09C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AC824A122BCDA6A500BBEAB6 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		AC824A142BD6A7E500BBEAB6 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		AC824A192BD6ABDB00BBEAB6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC49F2A42BDD25290065B09C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AC49F2A52BDD254F0065B09C /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		AC824A112BCDA68E00BBEAB6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,9 +97,10 @@
 		ACC0CDCA2BCB2356004EAD40 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				AC49F2A42BDD25290065B09C /* Networking */,
+				ACE8D4092BDAF91C0074051E /* Services */,
 				ACC0CDDB2BCC53C3004EAD40 /* Extensions */,
 				AC824A182BD6ABC400BBEAB6 /* Mock Data */,
-				ACE8D4092BDAF91C0074051E /* Services */,
 				AC824A112BCDA68E00BBEAB6 /* Models */,
 				ACC0CDDE2BCC58C2004EAD40 /* Core */,
 				ACC0CDCB2BCB2356004EAD40 /* CryptoApp.swift */,
@@ -250,6 +261,7 @@
 				ACE8D40B2BDAF9510074051E /* CoinDataService.swift in Sources */,
 				AC824A152BD6A7E500BBEAB6 /* CoinRowView.swift in Sources */,
 				ACE8D4072BD945C80074051E /* HomeViewModel.swift in Sources */,
+				AC49F2A62BDD254F0065B09C /* NetworkManager.swift in Sources */,
 				AC824A1A2BD6ABDB00BBEAB6 /* MockData.swift in Sources */,
 				ACC0CDCE2BCB2356004EAD40 /* ContentView.swift in Sources */,
 				ACC0CDE32BCC58F2004EAD40 /* HomeView.swift in Sources */,

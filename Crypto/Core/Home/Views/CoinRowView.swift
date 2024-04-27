@@ -26,7 +26,6 @@ struct CoinRowView: View {
 
 #Preview {
     CoinRowView(coin: MockData.coin, showHoldingsColumn: true)
-        
 }
 
 extension CoinRowView {
@@ -37,6 +36,10 @@ extension CoinRowView {
                 .foregroundStyle(Color.theme.secondaryText)
                 .frame(minWidth: 30)
             Circle()
+                .foregroundStyle((coin.priceChangePercentage24H ?? 0) >= 0 ?
+                    Color.theme.green :
+                    Color.theme.red
+                )
                 .frame(width: 30, height: 30)
             Text(coin.symbol.uppercased())
                 .font(.headline)
